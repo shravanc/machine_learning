@@ -49,7 +49,7 @@ def new_prodict(proba, threshold):
 
 ypred_new = new_prodict(proba, 0.8)
 ind       = np.where(np.array(ypred_new)!= "none")
-accuracy_score(np.array(ypred_new)[ind], y_test[ind])
+print(accuracy_score(np.array(ypred_new)[ind], y_test[ind]))
 
 
 
